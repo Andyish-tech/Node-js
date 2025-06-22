@@ -6,10 +6,10 @@ const options = {
     info: {
       title: 'Books API',
       version: '1.0.0',
-      description: 'Simple CRUD API with Swagger docs',
+      description: 'A simple CRUD API using Node.js and MySQL',
     },
   },
-  apis: ['./routes/*.js'], // where to find comments
+  apis: ['./routes/*.js'], // <-- make sure your routes folder exists and has books.js
 };
 
 module.exports = swaggerJSDoc(options);
